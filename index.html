@@ -7,18 +7,19 @@
     <title>Desafio 10</title>
     <style>
         @font-face {
-  font-family: 'idroid';
-  src: url('idroid.otf') format('opentype');
-}
+            font-family: 'idroid';
+            src: url('idroid.otf') format('opentype');
+        }
         body {
-            background-color: rgb(132, 225, 173) ;
+            background-color: rgb(132, 225, 173);
             margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         header {
             margin-top: 0px;
-            background-image: linear-gradient( to bottom, rgb(59, 209, 127), rgb(26, 92, 56));
+            background-image: linear-gradient(to bottom, rgb(59, 209, 127), rgb(26, 92, 56));
             color: white;
-
+            padding: 20px 0;
         }
         a {
             text-decoration: none;
@@ -26,41 +27,51 @@
         }
         a:hover {
             background-color: rgb(113, 212, 113);
-            padding: 2px;
+            padding: 2px 5px;
             border-radius: 5px;
         }
         header > h1 {
             text-align: center;
         }
+        header > p {
+            text-align: center;
+        }
         p {
             text-indent: 30px;
+            line-height: 1.5;
         }
         main {
             background-color: rgb(255, 255, 255);
-            margin: 10px 100px 10px 100px;
+            margin: 10px auto;
+            max-width: 800px;
+            padding: 20px;
             text-align: center;
+            border-radius: 10px;
         }
-        main > h2, p {
+        main > h2, main > p {
             text-align: left;
             margin-left: 10px;
         }
-        main > h2, h3 {
-            font-family: 'idroid';
+        main > h2, main > h3 {
+            font-family: 'idroid', sans-serif;
             color: rgb(33,97,62);
         }
         main > h3 {
             text-align: left;
             margin-left: 10px;
             background-image: linear-gradient(to right, rgb(59, 209, 127), rgb(253, 253, 253));
-        }
-        header > p {
-            text-align: center;
+            padding: 5px;
         }
         .dan {
             color: green;
+            font-weight: bold;
         }
         .pan {
             margin-left: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -68,36 +79,43 @@
     <header>
         <h1>Curiosidades da Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
-        <span class="pan"><a href="">Home</a></span>
-        <span class="pan"><a href="">Notícias</a></span>
-        <span class="pan"><a href="">Curiosidades</a></span>
-        <span class="pan"><a href="">Fale Conosco</a></span>
+        <span class="pan"><a href="#">Home</a></span>
+        <span class="pan"><a href="#">Notícias</a></span>
+        <span class="pan"><a href="#">Curiosidades</a></span>
+        <span class="pan"><a href="#">Fale Conosco</a></span>
     </header>
     <main>
         <h2>História do Mascote do Android</h2>
         <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
 
         <h3>A primeira versão</h3>
-
-        <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+        <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+        
         <picture>
             <source media="(max-width: 750px)" srcset="dan-droids-pq.png">
-            <img src="dan-droids.png" alt="">
+            <img src="dan-droids.png" alt="Primeira versão dos mascotes do Android">
         </picture>
+        
         <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <span class="dan">Dandroids</span>.</p>
+        
         <h3>Surge um novo mascote</h3>
         <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+        
         <picture>
             <source media="(max-width: 750px)" srcset="irina-blok-pq.jpg">
-            <img src="irina-blok.jpg" alt="">
+            <img src="irina-blok.jpg" alt="Criadora do mascote Irina Blok">
         </picture>
+        
         <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
-        <img src="bugdroid.png" alt="">
+        
+        <img src="bugdroid.png" alt="Bugdroid mascote do Android">
+        
         <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
-        <video src="https://www.youtube.com/watch?v=xS2D9x8odoE&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=30"></video>
+        
         <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
     </main>
-    <footer style="text-align: center;
-    background-color: rgb(26, 92, 56); padding: 5px;">Site criado por Renan para ter experiência</footer>
+    <footer style="text-align: center; background-color: rgb(26, 92, 56); color: white; padding: 10px;">
+        Site criado por Renan para ter experiência
+    </footer>
 </body>
 </html>
